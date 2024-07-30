@@ -19,6 +19,14 @@ zinit light zsh-users/zsh-completions
 setopt globdots # match hidden files/dirs
 autoload -Uz compinit && compinit
 
+#Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
+# Aliases
+alias ls='ls --color'
+alias ll='ls -la -color'
+
 # Paths
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
