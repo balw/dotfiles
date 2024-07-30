@@ -31,7 +31,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # Aliases
 alias ls='ls --color'
-alias ll='ls -la -color'
+alias ll='ls -la --color'
 alias c="clear"
 
 # Paths
