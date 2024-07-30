@@ -1,4 +1,19 @@
 eval "$(starship init zsh)"
 eval "$(fnm env --use-on-cd)"
+
+# Set the directory we want to store zinit and plugins
+ZINIT_HOME="${HOME}/dotfiles/zinit/zinit.git"
+
+# Download zinit, if it does not exist
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+# Load zinit and plugins
+source "${ZINIT_HOME}/zinit.zsh"
+zinit light zsh-users/zsh-syntax-highlighting
+
+# Paths
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
