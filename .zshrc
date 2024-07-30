@@ -13,6 +13,11 @@ fi
 # Load zinit and plugins
 source "${ZINIT_HOME}/zinit.zsh"
 zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+
+# Load completions
+setopt globdots # match hidden files/dirs
+autoload -Uz compinit && compinit
 
 # Paths
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
