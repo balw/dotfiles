@@ -37,3 +37,4 @@ alias c="clear"
 # Paths
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
+export PATH="$PATH:$HOME/.composer/vendor/bin"
