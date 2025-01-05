@@ -1,6 +1,6 @@
 ## Ben's dot files
 
-- [Alacritty - Terminal](https://github.com/alacritty/alacritty)
+- [Ghostty - Terminal](https://ghostty.org/)
 - [Yabai - Window Manager](https://github.com/koekeishiya/yabai)
 - [SKHD - Hot Keys](https://github.com/koekeishiya/skhd)
 - [Starship - Prompt](https://github.com/starship/starship)
