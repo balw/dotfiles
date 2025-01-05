@@ -34,6 +34,15 @@ alias ls='ls --color'
 alias ll='ls -la --color'
 alias c="clear"
 
+#requires - https://github.com/caarlos0/timer
+alias work="timer 60m && terminal-notifier -message 'Pomodoro'\
+        -title 'Work Timer is up! Take a Break'\
+        -sound Crystal"
+
+alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
+        -title 'Break is over! Get back to work'\
+        -sound Crystal"
+
 # Paths
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
