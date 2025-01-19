@@ -199,6 +199,10 @@ automatically-unhide-macos-hidden-apps = false
     run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
+  if.app-id = 'com.hnc.Discord'
+  run = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
     if.app-id = 'com.apple.Music'
     run = 'move-node-to-workspace 6'
 
@@ -208,6 +212,10 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
   if.app-id = 'com.electron.dockerdesktop'
+  run = 'move-node-to-workspace 8'
+
+[[on-window-detected]]
+  if.app-id = 'com.getflywheel.lightning.local'
   run = 'move-node-to-workspace 8'
 
 # float these apps
