@@ -222,3 +222,7 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-id = 'com.droplr.Desktop'
   run = ['layout floating', 'move-node-to-workspace 1']
+
+[[on-window-detected]]
+  if.app-id = 'com.TickTick.task.mac'
+  run = ['layout floating', 'move-node-to-workspace 7']
